@@ -1,0 +1,120 @@
+.header-announcement {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: var(--p-md);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--grey);
+}
+
+.hamburger-container {
+  display: none;
+}
+
+.brand-logo-container {
+  order: 1;
+}
+
+.brand-logo-container > .brand_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-logo-container > .brand_link > .brand_logo {
+  height: 2rem;
+  margin: var(--p-md);
+}
+
+.navbar > .page-links {
+  order: 2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+  transition: 0.3s ease;
+}
+
+.navbar > .page-links > * {
+  padding: var(--p-md);
+}
+
+.navbar > .nav-actions {
+  order: 3;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.nav-actions > * {
+  padding: var(--p-md);
+}
+
+.nav-actions > .search > .search-btn {
+  background: transparent;
+  padding: 0;
+}
+
+.account-dropdown {
+  position: relative;
+}
+
+.cart-pill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cart-pill > .quantity {
+  padding-left: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header-announcement,
+  .navbar > .page-links > *,
+  .nav-actions > *,
+  .brand_logo,
+  .cart-pill {
+    padding: var(--p-sm) !important;
+  }
+
+  .brand-logo-container {
+    order: 2;
+  }
+  .hamburger-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: var(--p-sm);
+  }
+
+  .navbar > .page-links {
+    order: 1;
+    position: absolute;
+    top: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    z-index: 100;
+    height: auto;
+    padding-block: 2rem;
+    background-color: var(--grey);
+  }
+
+  .hidden-page-links {
+    left: -100%;
+  }
+}

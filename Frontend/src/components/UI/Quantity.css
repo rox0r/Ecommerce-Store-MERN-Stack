@@ -1,0 +1,33 @@
+.quantitySelector {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .quantitySelector {
+    justify-content: flex-start;
+  }
+}
+
+.quantitySelector input {
+  margin-inline: 0.25rem;
+  text-align: center;
+  width: 3rem;
+  border: 2px solid var(--grey);
+  border-radius: 7px;
+  padding-block: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.quantitySelector input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.quantitySelector input[type="number"] {
+  -moz-appearance: textfield;
+}

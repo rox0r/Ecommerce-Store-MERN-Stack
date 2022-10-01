@@ -1,0 +1,22 @@
+.dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--grey);
+}
+
+.dropLink {
+  padding: 0.25rem 1rem;
+}
+
+.account-dropdown:hover .dropdown-content {
+  visibility: visible;
+}
+
+.dropLink:hover {
+  background-color: var(--grey);
+}

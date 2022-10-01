@@ -1,0 +1,19 @@
+.feedbackMsg {
+  opacity: 0;
+  border-radius: var(--border-radius);
+  margin-block: 1rem;
+  padding: 0.25rem 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.primaryMsg {
+  color: var(--success);
+  border: 1px solid var(--success);
+  background-color: #caf6e2;
+}
+
+.dangerMsg {
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  background-color: #f2b5bb;
+}

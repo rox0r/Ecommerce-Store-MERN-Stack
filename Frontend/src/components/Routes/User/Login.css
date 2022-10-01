@@ -1,0 +1,17 @@
+.loginContent {
+  display: flex;
+  justify-content: center;
+}
+
+.loginForm > * {
+  margin-top: 1rem;
+}
+
+.loginForm-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginContent .link-to-register {
+  margin-top: 1rem;
+}

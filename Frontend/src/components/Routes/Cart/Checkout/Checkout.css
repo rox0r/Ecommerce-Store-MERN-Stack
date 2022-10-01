@@ -1,0 +1,51 @@
+.checkout-container > .heading {
+  text-align: center;
+}
+
+.checkout-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkout-summary {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 0.5rem;
+}
+
+.checkout-summary > .shipping > h3,
+.checkout-summary > .cart > h3 {
+  padding-block: 1rem;
+}
+.checkout-summary > .shipping > div {
+  display: flex;
+}
+
+.checkout-summary > .shipping > div > p:nth-child(2) {
+  padding-inline: 0.5rem;
+}
+
+.total-summary {
+  flex: 0 0 30%;
+}
+
+.total-summary > * {
+  padding-top: 0.5rem;
+}
+
+.total-summary .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-summary > .checkout-action {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-content {
+    flex-direction: column;
+  }
+}

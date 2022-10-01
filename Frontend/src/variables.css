@@ -1,0 +1,38 @@
+:root {
+  --primary-light: #ffb3b5;
+  --primary-mid: #ff8084;
+  --primary-dark: #ff5056;
+  --primary-active: #a13034;
+  --secondary: rgb(255, 80, 86);
+  --light: white;
+  --dark: #343a40;
+  --grey: #e7eef1;
+
+  --success: #198754;
+  --info: #0dcaf0;
+  --warning: #ffc107;
+  --danger: #dc3545;
+
+  --p-md: 0.5rem 1rem;
+  --p-sm: 0.25rem 0.5rem;
+
+  --font-sans-serif: "Helvetica Neue", system-ui, -apple-system, "Segoe UI",
+    Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+
+  --body-font-family: var(--font-sans-serif);
+  --body-font-size: 20px;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+  --body-color: #212529;
+  --body-bg: #fff;
+
+  --border-radius: 5px;
+}

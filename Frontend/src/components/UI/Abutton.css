@@ -1,0 +1,25 @@
+.abtn {
+  color: var(--light);
+  text-align: center;
+  background-color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.abtn-sm {
+  padding: 0.15rem 0.75rem;
+}
+
+.abtn:hover {
+  color: var(--primary-dark);
+  background-color: var(--light);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.abtn:active {
+  background-color: var(--primary-light);
+  border-bottom: 2px solid var(--primary-active);
+}

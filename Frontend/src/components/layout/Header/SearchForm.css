@@ -1,0 +1,39 @@
+.searchFrom-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.searchFrom-container > .searchForm > .search-field {
+  width: 100%;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.searchForm:hover {
+  border: 1px solid gray;
+}
+
+.searchForm .search-field,
+button {
+  border: none;
+  outline: none;
+  padding: 0.25rem 1rem;
+}
+
+.searchForm .search-field {
+  width: 10rem;
+}
+
+.searchForm > .search-form-btn {
+  cursor: pointer;
+}

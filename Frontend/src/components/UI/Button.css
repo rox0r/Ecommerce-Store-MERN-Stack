@@ -1,0 +1,39 @@
+.btn {
+  color: var(--light);
+  background-color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+  border-radius: var(--border-radius);
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 0.15rem 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-sm {
+    padding: 0.15rem 0.35rem;
+  }
+}
+
+.btn:hover {
+  color: var(--primary-dark);
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.btn:active {
+  background-color: var(--primary-light);
+  border-bottom: 2px solid var(--primary-active);
+}
+
+.btn:disabled {
+  color: white;
+  background-color: #d6d5d5;
+  border: 2px solid #d6d5d5;
+  box-shadow: none;
+}

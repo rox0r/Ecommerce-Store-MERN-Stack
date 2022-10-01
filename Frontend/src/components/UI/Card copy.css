@@ -1,0 +1,23 @@
+.product-card {
+  border: 1px solid var(--grey);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin-inline: auto;
+}
+
+.product-card:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.product-card .img {
+  width: 285px;
+  height: 285px;
+  object-fit: cover;
+}
+
+.product-card .details .name {
+  padding: 0.5rem 1rem 0;
+}
+.product-card .details .price {
+  padding-inline: 1rem;
+}

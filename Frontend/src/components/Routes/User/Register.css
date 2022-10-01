@@ -1,0 +1,28 @@
+.registerContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.registerForm-wrapper {
+  text-align: left;
+  margin-inline: auto;
+}
+
+.registerForm > * {
+  margin-top: 1rem;
+}
+
+.registerForm-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm-group .input {
+  border: 1px solid #ced4da;
+  border-radius: var(--border-radius);
+}
+
+.registerContainer .link-to-login {
+  margin-top: 1rem;
+}

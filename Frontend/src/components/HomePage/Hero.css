@@ -1,0 +1,55 @@
+.hero_container {
+  position: relative;
+  height: 48rem;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.hero_content::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../Assets/images/hero-image.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  color: white;
+  z-index: 1;
+  background-color: rgba(1, 1, 1, 0.4);
+}
+
+.hero_content > .hero_msg {
+  padding-inline: 1rem;
+}
+
+.hero_jumbotron {
+  font-size: 3rem;
+}
+
+.hero_cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_jumbotron {
+    font-size: 2rem;
+  }
+  .hero_container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+}

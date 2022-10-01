@@ -1,0 +1,30 @@
+.product-filters {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-list > .active-category {
+  color: var(--primary-dark);
+}
+
+.category-list > .link:hover {
+  background-color: var(--grey);
+  cursor: pointer;
+}
+
+.filterForm > .form-item {
+  margin-bottom: 0.5rem;
+}
+
+.form-item > input {
+  width: 100%;
+}
+
+.product-filters .clear {
+  margin-block: 1rem;
+}
