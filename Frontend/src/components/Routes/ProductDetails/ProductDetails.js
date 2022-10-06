@@ -23,8 +23,9 @@ const ProductDetails = (props) => {
   const [quantity, setQuantity] = useState(1);
   const [feebackOpacity, setFeebackOpacity] = useState(0);
 
+  const productImage = product.images ? product.images[0].url : "";
+
   useEffect(() => {
-    dispatch(productActions.isLoading());
     dispatch(getProductDetails(params.productId));
   }, [dispatch, params.productId]);
 
@@ -55,7 +56,11 @@ const ProductDetails = (props) => {
       {!isLoading && (
         <div className="productDetails container">
           <div className="productImages">
-            <img className="img" src={tshirtImage} alt="tshirt"></img>
+            <img
+              className="img"
+              src={productImage}
+              alt={product.category}
+            ></img>
           </div>
           <div className="details">
             <div>

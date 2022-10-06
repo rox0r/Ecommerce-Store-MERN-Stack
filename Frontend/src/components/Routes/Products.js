@@ -74,7 +74,7 @@ const Products = ({ match }) => {
               {products.map((p) => {
                 return (
                   <Link to={`/product/${p._id}`} key={p._id}>
-                    <Card name={p.name} price={p.price} />
+                    <Card name={p.name} price={p.price} images={p.images} />
                   </Link>
                 );
               })}

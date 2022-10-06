@@ -49,11 +49,7 @@ const Checkout = () => {
             <div className="cart">
               <h3>Cart Details</h3>
               {cartItems.map((v) => {
-                return (
-                  <>
-                    <CheckoutCartItem key={v.productId} cartItem={v} />
-                  </>
-                );
+                return <CheckoutCartItem key={v.productId} cartItem={v} />;
               })}
             </div>
           </div>

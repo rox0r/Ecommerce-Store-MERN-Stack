@@ -50,7 +50,9 @@ const Cart = () => {
           {cartItems.length === 0 && (
             <>
               <div className="emptyCart">No items in the cart</div>
-              <Abutton href="/products">Explore Products</Abutton>
+              <Abutton className="emptyCart" href="/products">
+                Explore Products
+              </Abutton>
             </>
           )}
           {cartItems.length !== 0 && (

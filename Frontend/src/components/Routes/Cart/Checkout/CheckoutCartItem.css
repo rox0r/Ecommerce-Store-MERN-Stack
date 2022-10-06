@@ -7,8 +7,7 @@
 }
 
 .checkout-cart-details > .img {
-  background-color: antiquewhite;
-  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .checkout-cart-details > .details {

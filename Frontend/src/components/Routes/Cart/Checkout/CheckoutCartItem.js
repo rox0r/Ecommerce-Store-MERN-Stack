@@ -3,7 +3,14 @@ import "./CheckoutCartItem.css";
 const CheckoutCartItem = ({ cartItem }) => {
   return (
     <div className="checkout-cart-details">
-      <div className="img">Image</div>
+      <div className="img">
+        <img
+          className="img"
+          src={cartItem.image}
+          alt={cartItem.category}
+          width="90px"
+        ></img>
+      </div>
       <div className="details">
         <div className="details-item product-name">{cartItem.name}</div>
         <div className="details-item">

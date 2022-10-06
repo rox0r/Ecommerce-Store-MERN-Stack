@@ -16,9 +16,17 @@ const CartItem = ({ item }) => {
   const deleteHandler = () => {
     dispatch(deleteCartItem(productId));
   };
+
   return (
     <div className="cart-products-item">
-      <div className="img"></div>
+      <div className="img">
+        <img
+          className="img"
+          src={item.image}
+          alt={item.category}
+          width="115px"
+        ></img>
+      </div>
       <div className="details">
         <div className="details-item product-name">
           <p>{item.name}</p>

@@ -17,6 +17,7 @@ const productSlice = createSlice({
   reducers: {
     isLoading(state) {
       state.isLoading = true;
+      state.error = null;
     },
     productsFetchSuccess(state, action) {
       state.isLoading = false;
@@ -26,8 +27,8 @@ const productSlice = createSlice({
       state.filteredProductsCount = action.payload.filteredProductsCount;
     },
     productDetailsFetchSuccess(state, action) {
-      state.isLoading = false;
       state.product = action.payload.product;
+      state.isLoading = false;
     },
     productFetchFailed(state, action) {
       state.isLoading = false;
@@ -63,6 +64,7 @@ export const getProducts =
 
 export const getProductDetails = (productId) => async (dispatch) => {
   try {
+    await dispatch(productActions.isLoading());
     const url = "/api/v1/product/" + productId;
     const response = await fetch(url);
     const data = await response.json();
