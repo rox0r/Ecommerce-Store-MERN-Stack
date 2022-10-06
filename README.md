@@ -15,7 +15,7 @@ https://bestdeals-store.herokuapp.com/
 
 ## Env Variables
 
-Make Sure to Create a config.env file in Backend/config directory and add 'below required' variables in order to use the app.
+Make sure to create a config.env file in Backend/config directory and add 'below required' variables in order to use the app.
 
 **Essential Variables**
 
