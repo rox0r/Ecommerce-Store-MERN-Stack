@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 const productsRouter = require("./routes/productRoutes");
 const userRouter = require("./routes/userRoutes");
@@ -18,6 +19,11 @@ app.use(
 );
 app.use("/api/v1/", productsRouter);
 app.use("/api/v1/", userRouter);
+app.use(express.static(path.join(__dirname, "../Frontend/build")));
+
+app.get("*", (res, req) => {
+  res.sendFile(path.resolve(__dirname, "../Frontend/build/index.html"));
+});
 
 app.use(errorMiddleware);
 
